@@ -1,0 +1,17 @@
+Warning: The congestion map is out dated. Specify -rerun_global_router option to regenerate one.
+
+****************************************
+Report : congestion
+Design : full_chip_KMeansClustering
+Version: R-2020.09-SP6
+Date   : Sun Jan  5 21:47:02 2025
+****************************************
+
+Layer     |    overflow     |              # GRCs has
+Name      |  total  |  max  | overflow (%)      | max overflow
+---------------------------------------------------------------
+Both Dirs |    6424 |     3 |    6006  ( 8.23%) |      10
+H routing |    3012 |     3 |    2808  ( 7.70%) |       5
+V routing |    3412 |     3 |    3198  ( 8.77%) |       5
+
+1
