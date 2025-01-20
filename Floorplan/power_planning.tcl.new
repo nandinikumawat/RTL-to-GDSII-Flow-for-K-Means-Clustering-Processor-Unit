@@ -1,0 +1,43 @@
+
+# Original dense configuration for M1 and M2
+set PG_grid {
+    {M1 horizontal 0.36 0.032 0.0}
+    {M2 vertical 0.512 0.032 0.0}
+    {M3 horizontal 3.072 0.032 0.0}  
+    {M4 vertical 3.84 0.040 0.0}     
+    {M5 horizontal 3.84 0.040 0.0}   
+    {M6 vertical 3.84 0.040 0.0}     
+    {M7 horizontal 7.68 0.040 0.0}   
+    {M8 vertical 12.096 0.062 0.0}   
+    {M9 horizontal 12.096 0.062 0.0} 
+    {M10 vertical 57.6 0.450 0.0}
+    {M11 horizontal 57.6 0.450 0.0}
+}
+
+# Define dense PG strategy for M1 and M2
+create_pg_std_cell_conn_pattern M1_std_cell_rails -layers M1 -rail_width 0.36 -check_std_cell_drc false
+create_pg_std_cell_conn_pattern M2_std_cell_rails -layers M2 -rail_width 0.512 -check_std_cell_drc false
+
+# Apply PG strategy for standard cells
+set_pg_strategy std_cell_pg_M1 -core -pattern "{name: M1_std_cell_rails} {nets: {VDD VSS}}"
+set_pg_strategy std_cell_pg_M2 -core -pattern "{name: M2_std_cell_rails} {nets: {VDD VSS}}"
+
+# Define sparse mesh for the rest of the layers (M3 and above)
+foreach mesh_pattern $PG_grid {
+    set layer [lindex $mesh_pattern 0]
+    set direction [lindex $mesh_pattern 1]
+    set pitch [lindex $mesh_pattern 2]
+    set width [lindex $mesh_pattern 3]
+    set offset [lindex $mesh_pattern 4]
+    
+    if {![regexp "M1$\|M2$" $layer]} {
+        # Use sparse configuration for M3 and above with the exact pitch values
+        lappend pg_mesh_strategies pg_mesh_${layer}_strategy
+        create_pg_mesh_pattern pg_mesh_$layer \
+            -layers "{{${direction}_layer: $layer} {width: [expr $width * 0.8]} {spacing: interleaving} {pitch: $pitch} {offset: $offset}}"
+        set_pg_strategy pg_mesh_${layer}_strategy -core -pattern "{pattern: pg_mesh_${layer}} {nets: {VDD VSS}}"
+    }
+}
+
+# Compile the PG with combined strategies for dense M1/M2 and sparse M3 and above
+compile_pg -strategies {std_cell_pg_M1 std_cell_pg_M2 $pg_mesh_strategies} -ignore_drc
