@@ -1,0 +1,63 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 1
+        -report_by design
+        -input_pins
+        -nets
+        -transition_time
+        -capacitance
+Design : full_chip_KMeansClustering
+Version: R-2020.09-SP6
+Date   : Mon Jan  6 14:26:25 2025
+****************************************
+Information: Timer using 'CRPR'. (TIM-050)
+
+  Startpoint: data_in1[0] (input port clocked by CLK)
+  Endpoint: KMeansClustering_inst/dist_sum1_regx1x (rising edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: inputs
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                        0.00      0.00
+  clock network delay (propagated)                                             0.11      0.11
+  input external delay                                                         0.02      0.13 f
+  data_in1[0] (in)                                                   0.20      0.00      0.13 f
+  data_in1[0] (net)                                 6      0.03
+  KMeansClustering_inst/U25797/B1 (INR2D4BWP16P90)                   0.20      0.00      0.14 f
+  KMeansClustering_inst/U25797/ZN (INR2D4BWP16P90)                   0.01      0.02      0.16 r
+  KMeansClustering_inst/n24729 (net)                5      0.00
+  KMeansClustering_inst/U25826/A1 (NR2D2BWP16P90)                    0.01      0.00      0.16 r
+  KMeansClustering_inst/U25826/ZN (NR2D2BWP16P90)                    0.03      0.02      0.18 f
+  KMeansClustering_inst/n28695 (net)               12      0.01
+  KMeansClustering_inst/U27409/A1 (XOR2D1BWP16P90)                   0.03      0.00      0.18 f
+  KMeansClustering_inst/U27409/Z (XOR2D1BWP16P90)                    0.01      0.02      0.21 f
+  KMeansClustering_inst/n28699 (net)                2      0.00
+  KMeansClustering_inst/clock_optctmTdsLR_1_13547/A1 (IOA21D1BWP16P90)
+                                                                     0.01      0.00      0.21 f
+  KMeansClustering_inst/clock_optctmTdsLR_1_13547/ZN (IOA21D1BWP16P90)
+                                                                     0.02      0.02      0.23 f
+  KMeansClustering_inst/dist_sum1_internal[1] (net)
+                                                    2      0.00
+  KMeansClustering_inst/dist_sum1_regx1x/D (SDFCNQD1BWP16P90)        0.02      0.00      0.23 f
+  data arrival time                                                                      0.23
+
+  clock CLK (rise edge)                                                        0.00      0.00
+  clock network delay (propagated)                                             0.10      0.10
+  clock reconvergence pessimism                                               -0.00      0.10
+  KMeansClustering_inst/dist_sum1_regx1x/CP (SDFCNQD1BWP16P90)       0.14      0.00      0.10 r
+  library hold time                                                            0.03      0.13
+  data required time                                                                     0.13
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.13
+  data arrival time                                                                     -0.23
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.10
+
+
+1
