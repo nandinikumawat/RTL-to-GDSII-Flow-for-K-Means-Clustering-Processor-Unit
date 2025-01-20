@@ -79,6 +79,27 @@ This project emphasizes precision, efficiency, and robust design methodologies t
  
 ![image](https://github.com/user-attachments/assets/707501b4-67cd-49a0-bad1-4f408429b606)
 
+Post-Route Metrics
+
+Total Area: 5,234.70 µm² (Combinational) + 129.39 µm² (Noncombinational)
+
+Power Metrics:
+
+Internal Power: 4.36 mW
+
+Switching Power: 4.46 mW
+
+Leakage Power: 0.034 mW
+
+Total Power: 8.85 mW
+
+Timing Metrics:
+
+Hold Timing Slack: 0.09 ns
+
+Setup Timing Met
+
+Clock Frequency: 1.25 GHz
 
 ### Port Descriptions
 | Port Name      | Bit-Width | Direction | Description                            |
