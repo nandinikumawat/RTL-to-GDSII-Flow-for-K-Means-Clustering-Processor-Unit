@@ -1,0 +1,19 @@
+****************************************
+Report : clock
+Design : full_chip_KMeansClustering
+Mode   : default
+Version: R-2020.09-SP6
+Date   : Sun Dec 29 00:53:05 2024
+****************************************
+
+
+Attributes:
+    p - Propagated clock
+    G - Generated  clock
+    U - Unexpanded generated clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+CLK              1.25   {0 0.625}                     {clk}
+
+1

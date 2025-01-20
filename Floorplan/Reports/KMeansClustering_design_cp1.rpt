@@ -1,0 +1,62 @@
+****************************************
+Report : design
+Design : full_chip_KMeansClustering
+Version: R-2020.09-SP6
+Date   : Sun Dec 29 00:53:05 2024
+****************************************
+
+Total number of std cells in library : 1480
+Total number of dont_use lib cells   : 120
+Total number of dont_touch lib cells : 120
+Total number of buffers              : 82
+Total number of inverters            : 70
+Total number of flip-flops           : 80
+Total number of latches              : 16
+Total number of ICGs                 : 20
+
+Cell Instance Type  Count         Area
+--------------------------------------
+TOTAL LEAF CELLS    16532     5332.573
+Standard cells      16532     5332.573
+Hard macro cells        0        0.000
+Soft macro cells        0        0.000
+Always on cells         0        0.000
+Physical only           0        0.000
+Fixed cells             0        0.000
+Moveable cells      16532     5332.573
+Sequential             96      129.393
+Buffer/inverter      3608      561.116
+ICG cells               0        0.000
+
+Logic Hierarchies                    : 1
+Design Masters count                 : 213
+Total Flat nets count                : 33691
+Total FloatingNets count             : 16672
+Total no of Ports                    : 361
+Number of Master Clocks in design    : 1
+Number of Generated Clocks in design : 0
+Number of Path Groups in design      : 11 (5 of them Non Default)
+Number of Scan Chains in design      : 1
+List of Modes                        : default
+List of Corners                      : default
+List of Scenarios                    : default
+
+Core Area                            : 8087.040
+Chip Area                            : 12101.760
+Total Site Row Area                  : 8087.040
+Number of Blockages                  : 0
+Total area of Blockages              : 0.000
+Number of Power Domains              : 1
+Number of Voltage Areas              : 1
+Number of Group Bounds               : 0
+Number of Exclusive MoveBounds       : 0
+Number of Hard or Soft MoveBounds    : 0
+Number of Multibit Registers         : 0
+Number of Multibit LS/ISO Cells      : 0
+Number of Top Level RP Groups        : 0
+Number of Tech Layers                : 49 (37 of them have unknown routing dir.)
+
+Total wire length                    : 0.00 micron
+Total number of wires                : 0
+Total number of contacts             : 0
+1

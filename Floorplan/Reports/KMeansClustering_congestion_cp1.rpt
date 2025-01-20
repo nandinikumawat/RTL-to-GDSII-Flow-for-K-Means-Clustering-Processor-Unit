@@ -1,0 +1,15 @@
+****************************************
+Report : congestion
+Design : full_chip_KMeansClustering
+Version: R-2020.09-SP6
+Date   : Sun Dec 29 00:53:05 2024
+****************************************
+
+Layer     |    overflow     |              # GRCs has
+Name      |  total  |  max  | overflow (%)      | max overflow
+---------------------------------------------------------------
+Both Dirs |    4352 |     3 |    4079  ( 5.59%) |      17
+H routing |    2154 |     3 |    2014  ( 5.52%) |      11
+V routing |    2198 |     3 |    2065  ( 5.66%) |       6
+
+1

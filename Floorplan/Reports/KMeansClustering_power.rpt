@@ -1,0 +1,67 @@
+****************************************
+Report : power
+        -significant_digits 2
+Design : full_chip_KMeansClustering
+Version: R-2020.09-SP6
+Date   : Sun Dec 29 00:53:01 2024
+****************************************
+Information: Activity propagation will be performed for scenario default.
+Information: Doing activity propagation for mode 'default' and corner 'default' with effort level 'medium'. (POW-024)
+Information: Timer-derived activity data is cached on scenario default (POW-052)
+Infomation: Fast mode activity propagation power.rtl_activity_annotation setup is ignored. Always use accurate mode.
+
+ **** Information : No. of simulation cycles = 6 ****
+Mode: default
+Corner: default
+Scenario: default
+Voltage: 0.80
+Temperature: 25.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1pF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1nW
+Leakage Power Unit   : 1nW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+Warning: Power table extrapolation (extrapolation mode) for port CP on cell KMeansClustering_inst/dist_sum2_regx30x for parameter Tinp. Lowest table value = 0.001500, highest table value = 0.198000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CDN on cell KMeansClustering_inst/dist_sum2_regx30x for parameter Tinp. Lowest table value = 0.001500, highest table value = 0.395900, value = 0.498009 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Q on cell KMeansClustering_inst/dist_sum2_regx30x for parameter Tinp. Lowest table value = 0.001500, highest table value = 0.198000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CP on cell KMeansClustering_inst/dist_sum2_regx29x for parameter Tinp. Lowest table value = 0.001500, highest table value = 0.198000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CDN on cell KMeansClustering_inst/dist_sum2_regx29x for parameter Tinp. Lowest table value = 0.001500, highest table value = 0.395900, value = 0.498009 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Q on cell KMeansClustering_inst/dist_sum2_regx29x for parameter Tinp. Lowest table value = 0.001500, highest table value = 0.198000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CP on cell KMeansClustering_inst/dist_sum2_regx28x for parameter Tinp. Lowest table value = 0.001500, highest table value = 0.198000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CDN on cell KMeansClustering_inst/dist_sum2_regx28x for parameter Tinp. Lowest table value = 0.001500, highest table value = 0.395900, value = 0.498009 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Q on cell KMeansClustering_inst/dist_sum2_regx28x for parameter Tinp. Lowest table value = 0.001500, highest table value = 0.198000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CP on cell KMeansClustering_inst/dist_sum2_regx27x for parameter Tinp. Lowest table value = 0.001500, highest table value = 0.198000, value = 0.000000 (POW-046)
+Note - message 'POW-046' limit (10) exceeded. Remainder will be suppressed.
+
+  Cell Internal Power    = 4.39e+06 nW ( 49.8%)
+  Net Switching Power    = 4.43e+06 nW ( 50.2%)
+Total Dynamic Power      = 8.82e+06 nW (100.0%)
+
+Cell Leakage Power       = 1.89e+04 nW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+black_box                 0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+clock_network             2.33e+05               0.00e+00               0.00e+00               2.33e+05    (  2.6%)         
+register                  7.28e+04               6.42e+04               3.12e+02               1.37e+05    (  1.6%)         
+sequential                0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+combinational             4.09e+06               4.36e+06               1.85e+04               8.47e+06    ( 95.8%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                     4.39e+06 nW            4.43e+06 nW            1.89e+04 nW            8.84e+06 nW
+1

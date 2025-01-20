@@ -1,0 +1,55 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+        -groups output
+        -nosplit
+        -input_pins
+        -nets
+        -transition_time
+        -capacitance
+Design : full_chip_KMeansClustering
+Version: R-2020.09-SP6
+Date   : Sun Dec 29 00:57:20 2024
+****************************************
+Information: Timer using 'CRPR'. (TIM-050)
+
+  Startpoint: KMeansClustering_inst/dist_sum1_regx30x (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: dist_sum1[30] (output port clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: output
+  Path Type: max
+
+  Point                                                          Fanout     Cap        Trans        Incr        Path  
+  ----------------------------------------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                                            0.0000      0.0000
+  clock network delay (ideal)                                                                      0.2000      0.2000
+
+  KMeansClustering_inst/dist_sum1_regx30x/CP (SDFCNQD1BWP20P90)                        0.0000      0.0000      0.2000 r
+  KMeansClustering_inst/dist_sum1_regx30x/Q (SDFCNQD1BWP20P90)                         0.0443      0.0671      0.2671 f
+  KMeansClustering_inst/dist_sum1[30] (net)                         2      0.0122
+  PI_4_3612/I (CKBD1BWP16P90)                                                          0.0454      0.0048      0.2718 f
+  PI_4_3612/Z (CKBD1BWP16P90)                                                          0.0165      0.0238      0.2956 f
+  dist_sum1[30] (net)                                               1      0.0045
+  dist_sum1[30] (out)                                                                  0.0165      0.0005      0.2962 f
+  data arrival time                                                                                            0.2962
+
+  clock CLK (rise edge)                                                                            1.2500      1.2500
+  clock network delay (ideal)                                                                      0.2000      1.4500
+  clock reconvergence pessimism                                                                    0.0000      1.4500
+  clock uncertainty                                                                               -0.0500      1.4000
+  output external delay                                                                           -0.0600      1.3400
+  data required time                                                                                           1.3400
+  ----------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                           1.3400
+  data arrival time                                                                                           -0.2962
+  ----------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                  1.0438
+
+
+1
+LOGNAME = kumaw010

@@ -1,0 +1,229 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+        -groups inputs
+        -nosplit
+        -input_pins
+        -nets
+        -transition_time
+        -capacitance
+Design : full_chip_KMeansClustering
+Version: R-2020.09-SP6
+Date   : Sun Dec 29 00:53:05 2024
+****************************************
+Information: Timer using 'CRPR'. (TIM-050)
+
+  Startpoint: data_in3[0] (input port clocked by CLK)
+  Endpoint: KMeansClustering_inst/dist_sum1_regx31x (rising edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: inputs
+  Path Type: max
+
+  Point                                                         Fanout     Cap        Trans        Incr        Path  
+  ---------------------------------------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                                           0.0000      0.0000
+  clock network delay (ideal)                                                                     0.2000      0.2001
+  input external delay                                                                            0.0200      0.2201 r
+  data_in3[0] (in)                                                                    0.2000      0.0001      0.2201 r
+  data_in3[0] (net)                                                6      0.0346
+  RBINV_5/I (INVD1BWP16P90)                                                           0.2003      0.0176      0.2377 r
+  RBINV_5/ZN (INVD1BWP16P90)                                                          0.0270      0.0219      0.2596 f
+  net_aps_5 (net)                                                  1      0.0008
+  KMeansClustering_inst/U26682/A1 (ND2D1BWP20P90)                                     0.0270      0.0000      0.2596 f
+  KMeansClustering_inst/U26682/ZN (ND2D1BWP20P90)                                     0.0368      0.0136      0.2732 r
+  KMeansClustering_inst/n27134 (net)                               2      0.0017
+  KMeansClustering_inst/RBINV_3565/I (INVD1BWP16P90)                                  0.0368      0.0000      0.2733 r
+  KMeansClustering_inst/RBINV_3565/ZN (INVD1BWP16P90)                                 0.0169      0.0176      0.2909 f
+  KMeansClustering_inst/net_aps_3565 (net)                         2      0.0028
+  KMeansClustering_inst/U11915/A1 (OAI21D2BWP16P90)                                   0.0169      0.0001      0.2910 f
+  KMeansClustering_inst/U11915/ZN (OAI21D2BWP16P90)                                   0.0159      0.0141      0.3051 r
+  KMeansClustering_inst/n27118 (net)                               2      0.0023
+  KMeansClustering_inst/U22992/A1 (AOI21D2BWP20P90LVT)                                0.0159      0.0000      0.3051 r
+  KMeansClustering_inst/U22992/ZN (AOI21D2BWP20P90LVT)                                0.0126      0.0112      0.3163 f
+  KMeansClustering_inst/n27093 (net)                               2      0.0023
+  KMeansClustering_inst/U23484/A1 (OAI21D2BWP16P90)                                   0.0126      0.0001      0.3163 f
+  KMeansClustering_inst/U23484/ZN (OAI21D2BWP16P90)                                   0.0147      0.0133      0.3296 r
+  KMeansClustering_inst/n27077 (net)                               2      0.0024
+  KMeansClustering_inst/U23474/A1 (AOI21D2BWP16P90)                                   0.0147      0.0001      0.3297 r
+  KMeansClustering_inst/U23474/ZN (AOI21D2BWP16P90)                                   0.0151      0.0142      0.3439 f
+  KMeansClustering_inst/n27150 (net)                               2      0.0024
+  KMeansClustering_inst/U26832/A1 (OAI21D1BWP16P90)                                   0.0151      0.0000      0.3440 f
+  KMeansClustering_inst/U26832/ZN (OAI21D1BWP16P90)                                   0.0204      0.0159      0.3599 r
+  KMeansClustering_inst/n27172 (net)                               1      0.0022
+  KMeansClustering_inst/U22743/CI (FA1D1BWP16P90LVT)                                  0.0204      0.0000      0.3599 r
+  KMeansClustering_inst/U22743/CO (FA1D1BWP16P90LVT)                                  0.0150      0.0205      0.3804 r
+  KMeansClustering_inst/n27184 (net)                               2      0.0024
+  KMeansClustering_inst/U26833/C (MAOI222D1BWP20P90LVT)                               0.0150      0.0000      0.3804 r
+  KMeansClustering_inst/U26833/ZN (MAOI222D1BWP20P90LVT)                              0.0437      0.0139      0.3943 f
+  KMeansClustering_inst/n27151 (net)                               1      0.0023
+  KMeansClustering_inst/U26834/A1 (XOR2D4BWP16P90LVT)                                 0.0437      0.0000      0.3943 f
+  KMeansClustering_inst/U26834/Z (XOR2D4BWP16P90LVT)                                  0.0174      0.0306      0.4249 r
+  KMeansClustering_inst/n27214 (net)                              13      0.0208
+  KMeansClustering_inst/U22547/S (MUX2ND2BWP16P90)                                    0.0174      0.0007      0.4257 r
+  KMeansClustering_inst/U22547/ZN (MUX2ND2BWP16P90)                                   0.0175      0.0322      0.4579 f
+  KMeansClustering_inst/n27696 (net)                              10      0.0098
+  KMeansClustering_inst/RBINV_3212/I (INVD1BWP16P90)                                  0.0175      0.0007      0.4586 f
+  KMeansClustering_inst/RBINV_3212/ZN (INVD1BWP16P90)                                 0.0328      0.0259      0.4845 r
+  KMeansClustering_inst/net_aps_3212 (net)                         9      0.0096
+  KMeansClustering_inst/U13413/A1 (INR2D2BWP20P90LVT)                                 0.0328      0.0002      0.4847 r
+  KMeansClustering_inst/U13413/ZN (INR2D2BWP20P90LVT)                                 0.0261      0.0268      0.5115 r
+  KMeansClustering_inst/n27702 (net)                               9      0.0097
+  KMeansClustering_inst/U27594/B1 (IND2D1BWP16P90)                                    0.0261      0.0003      0.5118 r
+  KMeansClustering_inst/U27594/ZN (IND2D1BWP16P90)                                    0.0226      0.0211      0.5329 f
+  KMeansClustering_inst/n27683 (net)                               4      0.0034
+  KMeansClustering_inst/U27003/A1 (INR2D1BWP16P90)                                    0.0226      0.0001      0.5330 f
+  KMeansClustering_inst/U27003/ZN (INR2D1BWP16P90)                                    0.0148      0.0199      0.5530 f
+  KMeansClustering_inst/n27834 (net)                               3      0.0037
+  KMeansClustering_inst/U27005/A1 (XOR2D1BWP20P90)                                    0.0148      0.0001      0.5530 f
+  KMeansClustering_inst/U27005/Z (XOR2D1BWP20P90)                                     0.0118      0.0230      0.5761 r
+  KMeansClustering_inst/n27828 (net)                               2      0.0016
+  KMeansClustering_inst/U27007/A2 (AOI21D1BWP16P90)                                   0.0118      0.0000      0.5761 r
+  KMeansClustering_inst/U27007/ZN (AOI21D1BWP16P90)                                   0.0184      0.0155      0.5916 f
+  KMeansClustering_inst/n27823 (net)                               2      0.0022
+  KMeansClustering_inst/U20175/A3 (XNR3D1BWP16P90)                                    0.0184      0.0001      0.5916 f
+  KMeansClustering_inst/U20175/ZN (XNR3D1BWP16P90)                                    0.0145      0.0350      0.6266 f
+  KMeansClustering_inst/n27838 (net)                               2      0.0018
+  KMeansClustering_inst/U27120/A1 (OR2D1BWP20P90)                                     0.0145      0.0000      0.6267 f
+  KMeansClustering_inst/U27120/Z (OR2D1BWP20P90)                                      0.0089      0.0188      0.6455 f
+  KMeansClustering_inst/n28222 (net)                               2      0.0017
+  KMeansClustering_inst/U27589/A2 (AOI21D1BWP16P90)                                   0.0089      0.0000      0.6456 f
+  KMeansClustering_inst/U27589/ZN (AOI21D1BWP16P90)                                   0.0163      0.0151      0.6607 r
+  KMeansClustering_inst/n28215 (net)                               2      0.0019
+  KMeansClustering_inst/U27588/A2 (OAI21D1BWP20P90LVT)                                0.0163      0.0000      0.6607 r
+  KMeansClustering_inst/U27588/ZN (OAI21D1BWP20P90LVT)                                0.0199      0.0165      0.6772 f
+  KMeansClustering_inst/n27971 (net)                               4      0.0037
+  KMeansClustering_inst/U27133/A2 (OAI211D1BWP16P90)                                  0.0199      0.0002      0.6774 f
+  KMeansClustering_inst/U27133/ZN (OAI211D1BWP16P90)                                  0.0140      0.0140      0.6914 r
+  KMeansClustering_inst/n27858 (net)                               1      0.0009
+  KMeansClustering_inst/U27134/C (OAI211D1BWP16P90)                                   0.0140      0.0000      0.6914 r
+  KMeansClustering_inst/U27134/ZN (OAI211D1BWP16P90)                                  0.0209      0.0182      0.7096 f
+  KMeansClustering_inst/n27968 (net)                               2      0.0016
+  KMeansClustering_inst/U27162/A3 (XOR3D2BWP16P90)                                    0.0209      0.0000      0.7097 f
+  KMeansClustering_inst/U27162/Z (XOR3D2BWP16P90)                                     0.0113      0.0329      0.7426 f
+  KMeansClustering_inst/n28198 (net)                               2      0.0019
+  KMeansClustering_inst/RBINV_3128/I (INVD1BWP16P90)                                  0.0113      0.0001      0.7426 f
+  KMeansClustering_inst/RBINV_3128/ZN (INVD1BWP16P90)                                 0.0060      0.0070      0.7496 r
+  KMeansClustering_inst/net_aps_3128 (net)                         1      0.0009
+  KMeansClustering_inst/U27165/A1 (OAI21D1BWP16P90)                                   0.0060      0.0000      0.7497 r
+  KMeansClustering_inst/U27165/ZN (OAI21D1BWP16P90)                                   0.0180      0.0133      0.7630 f
+  KMeansClustering_inst/n28188 (net)                               1      0.0022
+  KMeansClustering_inst/U25005/CI (FA1D1BWP20P90)                                     0.0180      0.0001      0.7630 f
+  KMeansClustering_inst/U25005/CO (FA1D1BWP20P90)                                     0.0138      0.0319      0.7949 f
+  KMeansClustering_inst/n28184 (net)                               2      0.0018
+  KMeansClustering_inst/RBINV_3514/I (INVD1BWP16P90)                                  0.0138      0.0001      0.7950 f
+  KMeansClustering_inst/RBINV_3514/ZN (INVD1BWP16P90)                                 0.0070      0.0078      0.8028 r
+  KMeansClustering_inst/net_aps_3514 (net)                         1      0.0010
+  KMeansClustering_inst/U27167/A2 (OAI21D1BWP16P90)                                   0.0070      0.0000      0.8028 r
+  KMeansClustering_inst/U27167/ZN (OAI21D1BWP16P90)                                   0.0182      0.0153      0.8182 f
+  KMeansClustering_inst/n28252 (net)                               1      0.0023
+  KMeansClustering_inst/U27271/CI (FA1D1BWP16P90)                                     0.0182      0.0001      0.8183 f
+  KMeansClustering_inst/U27271/CO (FA1D1BWP16P90)                                     0.0163      0.0314      0.8497 f
+  KMeansClustering_inst/n28260 (net)                               1      0.0026
+  KMeansClustering_inst/U27274/CI (FA1D1BWP16P90)                                     0.0163      0.0002      0.8498 f
+  KMeansClustering_inst/U27274/CO (FA1D1BWP16P90)                                     0.0186      0.0325      0.8823 f
+  KMeansClustering_inst/n28269 (net)                               3      0.0032
+  KMeansClustering_inst/U27170/A1 (ND2D1BWP16P90)                                     0.0186      0.0002      0.8826 f
+  KMeansClustering_inst/U27170/ZN (ND2D1BWP16P90)                                     0.0112      0.0117      0.8942 r
+  KMeansClustering_inst/n28172 (net)                               2      0.0021
+  KMeansClustering_inst/U27171/B (OAI21D1BWP16P90)                                    0.0112      0.0001      0.8943 r
+  KMeansClustering_inst/U27171/ZN (OAI21D1BWP16P90)                                   0.0108      0.0104      0.9048 f
+  KMeansClustering_inst/n28000 (net)                               1      0.0008
+  KMeansClustering_inst/U27180/A1 (OAI21D1BWP20P90LVT)                                0.0108      0.0000      0.9048 f
+  KMeansClustering_inst/U27180/ZN (OAI21D1BWP20P90LVT)                                0.0205      0.0156      0.9204 r
+  KMeansClustering_inst/n28280 (net)                               3      0.0033
+  KMeansClustering_inst/U27186/A1 (NR2D1BWP16P90)                                     0.0205      0.0003      0.9207 r
+  KMeansClustering_inst/U27186/ZN (NR2D1BWP16P90)                                     0.0108      0.0118      0.9325 f
+  KMeansClustering_inst/n28161 (net)                               2      0.0018
+  KMeansClustering_inst/U27187/B (IAOI21D1BWP16P90)                                   0.0108      0.0001      0.9326 f
+  KMeansClustering_inst/U27187/ZN (IAOI21D1BWP16P90)                                  0.0120      0.0112      0.9438 r
+  KMeansClustering_inst/n28019 (net)                               1      0.0010
+  KMeansClustering_inst/U27592/A2 (AOI21D1BWP20P90LVT)                                0.0120      0.0000      0.9439 r
+  KMeansClustering_inst/U27592/ZN (AOI21D1BWP20P90LVT)                                0.0122      0.0109      0.9548 f
+  KMeansClustering_inst/n28291 (net)                               2      0.0018
+  KMeansClustering_inst/RBINV_3604/I (INVD1BWP16P90)                                  0.0122      0.0001      0.9549 f
+  KMeansClustering_inst/RBINV_3604/ZN (INVD1BWP16P90)                                 0.0060      0.0069      0.9618 r
+  KMeansClustering_inst/net_aps_3604 (net)                         1      0.0008
+  KMeansClustering_inst/U27590/C (MAOI222D1BWP16P90LVT)                               0.0060      0.0000      0.9618 r
+  KMeansClustering_inst/U27590/ZN (MAOI222D1BWP16P90LVT)                              0.0187      0.0121      0.9739 f
+  KMeansClustering_inst/n28155 (net)                               1      0.0026
+  KMeansClustering_inst/U27229/CI (FA1D1BWP20P90LVT)                                  0.0187      0.0001      0.9740 f
+  KMeansClustering_inst/U27229/CO (FA1D1BWP20P90LVT)                                  0.0117      0.0255      0.9995 f
+  KMeansClustering_inst/n28304 (net)                               2      0.0021
+  KMeansClustering_inst/U11184/A1 (AO21D1BWP16P90)                                    0.0117      0.0001      0.9996 f
+  KMeansClustering_inst/U11184/Z (AO21D1BWP16P90)                                     0.0110      0.0180      1.0176 f
+  KMeansClustering_inst/n28152 (net)                               1      0.0024
+  KMeansClustering_inst/U27228/CI (FA1D2BWP16P90)                                     0.0110      0.0001      1.0177 f
+  KMeansClustering_inst/U27228/CO (FA1D2BWP16P90)                                     0.0102      0.0244      1.0421 f
+  KMeansClustering_inst/n28146 (net)                               1      0.0023
+  KMeansClustering_inst/U27226/CI (FA1D1BWP16P90)                                     0.0102      0.0001      1.0422 f
+  KMeansClustering_inst/U27226/CO (FA1D1BWP16P90)                                     0.0146      0.0279      1.0701 f
+  KMeansClustering_inst/n28311 (net)                               1      0.0022
+  KMeansClustering_inst/U27284/CI (FA1D1BWP16P90)                                     0.0146      0.0001      1.0701 f
+  KMeansClustering_inst/U27284/S (FA1D1BWP16P90)                                      0.0275      0.0529      1.1230 r
+  KMeansClustering_inst/n28342 (net)                               3      0.0065
+  KMeansClustering_inst/U12016/A1 (NR2D1BWP16P90)                                     0.0275      0.0007      1.1238 r
+  KMeansClustering_inst/U12016/ZN (NR2D1BWP16P90)                                     0.0113      0.0123      1.1360 f
+  KMeansClustering_inst/n28317 (net)                               1      0.0015
+  KMeansClustering_inst/U27285/A2 (OAI21D2BWP16P90)                                   0.0113      0.0000      1.1361 f
+  KMeansClustering_inst/U27285/ZN (OAI21D2BWP16P90)                                   0.0139      0.0132      1.1493 r
+  KMeansClustering_inst/n28334 (net)                               1      0.0023
+  KMeansClustering_inst/U26565/CI (FA1D1BWP20P90)                                     0.0139      0.0001      1.1494 r
+  KMeansClustering_inst/U26565/S (FA1D1BWP20P90)                                      0.0336      0.0582      1.2076 f
+  KMeansClustering_inst/n28631 (net)                               1      0.0078
+  KMeansClustering_inst/U27385/B (FA1D2BWP16P90)                                      0.0338      0.0018      1.2093 f
+  KMeansClustering_inst/U27385/CO (FA1D2BWP16P90)                                     0.0112      0.0312      1.2406 f
+  KMeansClustering_inst/n28635 (net)                               3      0.0026
+  KMeansClustering_inst/U27361/A1 (ND2D1BWP16P90)                                     0.0112      0.0000      1.2406 f
+  KMeansClustering_inst/U27361/ZN (ND2D1BWP16P90)                                     0.0129      0.0088      1.2494 r
+  KMeansClustering_inst/n28553 (net)                               1      0.0015
+  KMeansClustering_inst/U27362/A2 (ND3D2BWP16P90)                                     0.0129      0.0000      1.2494 r
+  KMeansClustering_inst/U27362/ZN (ND3D2BWP16P90)                                     0.0155      0.0149      1.2643 f
+  KMeansClustering_inst/n28555 (net)                               1      0.0021
+  KMeansClustering_inst/U14530/CI (FA1D1BWP16P90)                                     0.0155      0.0000      1.2643 f
+  KMeansClustering_inst/U14530/CO (FA1D1BWP16P90)                                     0.0150      0.0297      1.2940 f
+  KMeansClustering_inst/n28738 (net)                               1      0.0023
+  KMeansClustering_inst/U27425/CI (FA1D2BWP16P90)                                     0.0150      0.0001      1.2941 f
+  KMeansClustering_inst/U27425/CO (FA1D2BWP16P90)                                     0.0102      0.0254      1.3195 f
+  KMeansClustering_inst/n28583 (net)                               1      0.0022
+  KMeansClustering_inst/U27374/CI (FA1D2BWP16P90)                                     0.0102      0.0000      1.3196 f
+  KMeansClustering_inst/U27374/CO (FA1D2BWP16P90)                                     0.0136      0.0271      1.3467 f
+  KMeansClustering_inst/n28614 (net)                               2      0.0039
+  KMeansClustering_inst/U27124/A1 (ND2D2BWP16P90LVT)                                  0.0136      0.0001      1.3468 f
+  KMeansClustering_inst/U27124/ZN (ND2D2BWP16P90LVT)                                  0.0071      0.0066      1.3534 r
+  KMeansClustering_inst/n28970 (net)                               1      0.0028
+  KMeansClustering_inst/U27121/B1 (IND2D4BWP16P90LVT)                                 0.0071      0.0001      1.3535 r
+  KMeansClustering_inst/U27121/ZN (IND2D4BWP16P90LVT)                                 0.0063      0.0060      1.3595 f
+  KMeansClustering_inst/n28627 (net)                               2      0.0035
+  KMeansClustering_inst/U11353/B1 (IND2D1BWP16P90LVT)                                 0.0063      0.0001      1.3595 f
+  KMeansClustering_inst/U11353/ZN (IND2D1BWP16P90LVT)                                 0.0049      0.0047      1.3642 r
+  KMeansClustering_inst/n28618 (net)                               1      0.0008
+  KMeansClustering_inst/U11959/A1 (ND2D1BWP16P90)                                     0.0049      0.0000      1.3643 r
+  KMeansClustering_inst/U11959/ZN (ND2D1BWP16P90)                                     0.0121      0.0099      1.3742 f
+  KMeansClustering_inst/n28626 (net)                               1      0.0017
+  KMeansClustering_inst/U27383/A1 (XOR2D2BWP16P90)                                    0.0121      0.0001      1.3742 f
+  KMeansClustering_inst/U27383/Z (XOR2D2BWP16P90)                                     0.0123      0.0231      1.3974 r
+  KMeansClustering_inst/dist_sum1_internal[31] (net)               3      0.0035
+  KMeansClustering_inst/dist_sum1_regx31x/D (SDFCNQD2BWP16P90)                        0.0123      0.0002      1.3975 r
+  data arrival time                                                                                           1.3975
+
+  clock CLK (rise edge)                                                                           1.2500      1.2500
+  clock network delay (ideal)                                                                     0.2000      1.4500
+  clock reconvergence pessimism                                                                   0.0000      1.4500
+  KMeansClustering_inst/dist_sum1_regx31x/CP (SDFCNQD2BWP16P90)                       0.0000      0.0000      1.4500 r
+  clock uncertainty                                                                              -0.0500      1.4000
+  library setup time                                                                             -0.0299      1.3701
+  data required time                                                                                          1.3701
+  ---------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                          1.3701
+  data arrival time                                                                                          -1.3975
+  ---------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                           -0.0274
+
+
+1
+LOGNAME = kumaw010
