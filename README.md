@@ -54,8 +54,9 @@ This project emphasizes precision, efficiency, and robust design methodologies t
 6. **Power Distribution**:
    - Uses hierarchical power mesh with virtual pads to ensure minimal IR drop.
   
-  ![image](https://github.com/user-attachments/assets/73db44d3-1345-4b7b-9081-c10fe2f31b53)
-
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/73db44d3-1345-4b7b-9081-c10fe2f31b53" alt="image description">
+</div>
 
 ### Data Flow
 1. Input data and centroids are fed into the **Subtraction and Squaring Block**.
@@ -77,7 +78,10 @@ This project emphasizes precision, efficiency, and robust design methodologies t
   - Dynamic Power Consumption: 9.7 mW
   - Fault Coverage: 97.17%
  
-![image](https://github.com/user-attachments/assets/707501b4-67cd-49a0-bad1-4f408429b606)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/707501b4-67cd-49a0-bad1-4f408429b606" alt="Second image description">
+</div>
+
 
 Post-Route Metrics
 
@@ -139,22 +143,28 @@ Clock Frequency: 1.25 GHz
    - Core Utilization: 80%
    - Congestion: Reduced to <5%
   
-![image](https://github.com/user-attachments/assets/741182c8-42eb-4117-923d-2f3e917ff948)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/741182c8-42eb-4117-923d-2f3e917ff948" alt="First image description" style="margin-bottom: 20px;">
+  <br>
+  <img src="https://github.com/user-attachments/assets/6bf17018-58ef-4e12-a6bd-76f3f55a4063" alt="Second image description">
+</div>
 
-![image](https://github.com/user-attachments/assets/6bf17018-58ef-4e12-a6bd-76f3f55a4063)
 
 
 2. **Routing**:
    - M2-M10 layers optimized for signal integrity.
    - Clock tree designed for minimal skew.
-  
-![image](https://github.com/user-attachments/assets/868a37d6-3d10-4262-ad1b-57adc434f99b)
+   - 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/868a37d6-3d10-4262-ad1b-57adc434f99b" alt="First image description" style="margin-bottom: 20px;">
+  <br>
+  <img src="https://github.com/user-attachments/assets/9da56091-34a9-4600-8530-8519ffa6453c" alt="Second image description" style="margin-bottom: 20px;">
+  <br>
+  <img src="https://github.com/user-attachments/assets/0397c0f0-3e7e-4e06-98cf-0642057ba31e" alt="Third image description" style="margin-bottom: 20px;">
+  <br>
+  <img src="https://github.com/user-attachments/assets/a0262741-b3a6-483d-9fd0-1589c834491c" alt="Fourth image description">
+</div>
 
-![image](https://github.com/user-attachments/assets/9da56091-34a9-4600-8530-8519ffa6453c)
-
-![image](https://github.com/user-attachments/assets/0397c0f0-3e7e-4e06-98cf-0642057ba31e)
-
-![image](https://github.com/user-attachments/assets/a0262741-b3a6-483d-9fd0-1589c834491c)
 
 
 3. **Key Metrics**:
