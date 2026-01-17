@@ -165,12 +165,6 @@ Clock Frequency: 1.25 GHz
   <img src="https://github.com/user-attachments/assets/a0262741-b3a6-483d-9fd0-1589c834491c" alt="Fourth image description">
 </div>
 
-
-
-3. **Key Metrics**:
-   - Hold Timing Slack: 0.09 ns
-   - Dynamic Power: 9.7 mW
-
 ---
 
 ## Future Improvements
